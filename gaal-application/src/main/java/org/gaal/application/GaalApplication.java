@@ -24,10 +24,11 @@ public class GaalApplication {
     public static void main(String[] args) {
 
 
-
         org.gaal.dto.ClusterDTO d = new ClusterDTO("cluster1", LocalDate.now());
         log.info("cluster {}", d);
 
         SpringApplication.run(GaalApplication.class, args);
+
+        //com.fasterxml.jackson.annotation.JsonProperty g;
     }
 }

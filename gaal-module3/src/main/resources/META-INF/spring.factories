@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration =\
-  org.gaal.moduletwo.configuration.ModuleOneConfiguration
+  org.gaal.modulethree.configuration.ModuleThreeConfiguration

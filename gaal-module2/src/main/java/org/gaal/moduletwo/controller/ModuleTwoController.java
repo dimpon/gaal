@@ -19,7 +19,7 @@ public class ModuleTwoController {
 
     @PostConstruct
     public void post(){
-      log.info("ModuleOneController is ready");
+      log.info("ModuleTwoController is ready");
     }
 
     @RequestMapping(value = "/health", method = RequestMethod.GET)

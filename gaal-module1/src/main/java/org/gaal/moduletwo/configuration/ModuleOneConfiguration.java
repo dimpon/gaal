@@ -22,7 +22,7 @@ public class ModuleOneConfiguration {
     }
 
     @Bean
-    public ModuleOneService get(){
+    public ModuleOneService getOne(){
         log.info("Going to create ModuleOneService");
         return new ModuleOneServiceImpl();
     }

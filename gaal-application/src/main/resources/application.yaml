@@ -1,2 +1,8 @@
 module-one:
   enable: true
+
+module-two:
+  enable: true
+
+module-three:
+  enable: true

@@ -9,7 +9,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 
 	implementation project(':gaal-common')
-	implementation project(':gaal-module1')
+	runtimeOnly project(':gaal-module1')
+	runtimeOnly project(':gaal-module2')
+	runtimeOnly project(':gaal-module3')
 
 	implementation 'org.springframework.boot:spring-boot-starter'
 
