@@ -1,0 +1,10 @@
+rootProject.name = 'gaal'
+
+include 'gaal-common'
+include 'gaal-module1'
+include 'gaal-module2'
+include 'gaal-module3'
+include 'gaal-application'
+
+//include 'gaal-module2'
+//include 'gaal-module3'
