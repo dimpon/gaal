@@ -1,4 +1,4 @@
-package org.gaal.moduletwo.service;
+package org.gaal.moduleone.service;
 
 import org.gaal.valueobjects.Cluster;
 

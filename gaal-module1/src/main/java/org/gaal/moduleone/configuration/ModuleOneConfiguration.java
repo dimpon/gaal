@@ -1,8 +1,8 @@
-package org.gaal.moduletwo.configuration;
+package org.gaal.moduleone.configuration;
 
 import lombok.extern.slf4j.Slf4j;
-import org.gaal.moduletwo.service.ModuleOneService;
-import org.gaal.moduletwo.service.ModuleOneServiceImpl;
+import org.gaal.moduleone.service.ModuleOneService;
+import org.gaal.moduleone.service.ModuleOneServiceImpl;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 @Slf4j
 @ConditionalOnProperty(prefix = "module-one", name = "enable", havingValue = "true")
 @Configuration
-@ComponentScan(basePackages = {"org.gaal.moduletwo.controller"})
+@ComponentScan(basePackages = {"org.gaal.moduleone.controller"})
 public class ModuleOneConfiguration {
 
     @PostConstruct

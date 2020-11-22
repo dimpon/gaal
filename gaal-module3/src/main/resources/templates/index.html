@@ -1,14 +1,22 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="#{index.title}"></title>
+    <title>Just UI</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
 </head>
 <body>
 
 <section class="container">
-    <h3>Hello, this is UI</h3>
+    <h3>Hello, this is UI-11</h3>
+
+    <section class="container">
+        <div th:fragment="form" xmlns:th="http://www.w3.org/1999/xhtml">
+            <form action="#" th:action="service1" method="post">
+                <input type="submit" class="btn btn-primary" value="Fire event"/>
+            </form>
+        </div>
+    </section>
 </section>
 </body>
 </html>

@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 @Slf4j
 @ConditionalOnProperty(prefix = "module-two", name = "enable", havingValue = "true")
 @Configuration
-@ComponentScan(basePackages = { "org.gaal.moduletwo.controller"})
+@ComponentScan(basePackages = {"org.gaal.moduletwo.controller"})
 public class ModuleTwoConfiguration {
 
     @PostConstruct

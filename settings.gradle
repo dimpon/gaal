@@ -1,6 +1,7 @@
 rootProject.name = 'gaal'
 
 include 'gaal-common'
+include 'gaal-common-beans'
 include 'gaal-module1'
 include 'gaal-module2'
 include 'gaal-module3'

@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration =\
-  org.gaal.moduleone.configuration.ModuleOneConfiguration
+   org.gaal.commonbeans.configuration.CommonBeansConfiguration
