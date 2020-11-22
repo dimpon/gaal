@@ -2,6 +2,8 @@ package org.gaal.modulethree.controller;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.gaal.events.EventType;
+import org.gaal.events.GenericEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Controller;
@@ -21,8 +23,8 @@ public class WebController {
 
 
     @PostConstruct
-    public void post(){
-      log.info("WebController is ready");
+    public void post() {
+        log.info("WebController is ready");
     }
 
     @RequestMapping(method = RequestMethod.GET)
@@ -36,6 +38,9 @@ public class WebController {
     public String service1(Model model) {
 
         log.info("call service1");
+        var event = GenericEvent.of("Job1234", EventType.INTERRUPT_JOB);
+        log.info("fire event {}", event);
+        applicationEventPublisher.publishEvent(event);
         return "index";
     }
 

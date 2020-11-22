@@ -2,7 +2,10 @@
 dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'com.tngtech.archunit:archunit'
+
+	testImplementation 'org.slf4j:slf4j-api'
+	testImplementation 'ch.qos.logback:logback-classic'
 
 	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
-
 }
