@@ -2,7 +2,7 @@
 
 It is a POC project.
  
-Modular monolith Architecture with Microservices features. 
+Modular monolith Architecture with strict Architecture boundaries. 
 ### Tech steck
 - Java 11
 - Spring Boot 2.1.9
@@ -27,4 +27,8 @@ Modular monolith Architecture with Microservices features.
 Modules can send brodcast events with payload, and with this way interrogate with others modules. 
 Modules also can contain custom implementations of interfaces from _gaal-common_ and these implementations 
 can be used by others modules, but via the interface.  
+
+![image](files/onion.png)
+
+Each module has similar architecture structure (as much as possible) and should follow onion model. 
  
