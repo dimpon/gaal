@@ -3,12 +3,13 @@ package org.gaal.application;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
 
 import javax.annotation.PostConstruct;
 
 @Slf4j
-@SpringBootApplication
+@EnableAutoConfiguration
 public class GaalApplication {
 
     @Value("${module-one.enable}")

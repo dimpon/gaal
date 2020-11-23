@@ -8,6 +8,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	testImplementation 'com.tngtech.archunit:archunit-junit5'
+	testImplementation 'org.springframework.boot:spring-boot-starter-web'
+
 	//	implementation project(':gaal-common')
 	runtimeOnly project(':gaal-common')
 	runtimeOnly project(':gaal-common-beans')

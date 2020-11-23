@@ -23,6 +23,7 @@ subprojects {
         }
         dependencies {
             dependency 'com.tngtech.archunit:archunit:0.14.1'
+            dependency 'com.tngtech.archunit:archunit-junit5:0.14.1'
         }
     }
 
